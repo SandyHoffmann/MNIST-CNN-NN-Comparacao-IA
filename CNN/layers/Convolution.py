@@ -36,4 +36,4 @@ class Convolution:
                 dz_filtros[filtro] += dZ[i, j, filtro] * k
 
         self.filtros -= learning_rate * dz_filtros
-        return None
+        return self.filtros

@@ -49,6 +49,5 @@ class Softmax:
             self.weights -= learning_rate * self.input[np.newaxis].T @ gradient_loss[np.newaxis]
 
             self.bias -= learning_rate * gradient_loss
-
         return output.reshape(self.input_dim)
     

@@ -43,20 +43,26 @@ pool = MaxPooling.MaxPooling(2)
 # 13x13x8 -> 10
 softmax = Softmax.Softmax(13 * 13 * 8, 10)
 
-show_sample = False
+show_sample_forward = False
+show_sample_backward = True
 
-def plot(A):
-    for i in range(A.shape[2]):
-        plt.subplot(1, A.shape[2], i + 1)
-        plt.imshow(A[:, :, i], cmap='gray')
+def plot(A, tamanho=False):
+    if tamanho:
+        for i in range(tamanho):
+            plt.subplot(1, tamanho, i + 1)
+            plt.imshow(A[i, :, :], cmap='gray')
+    else:
+        for i in range(A.shape[2]):
+            plt.subplot(1, A.shape[2], i + 1)
+            plt.imshow(A[:, :, i], cmap='gray')
 
     plt.show()
 def forward_propagation(x, y):
-    global show_sample
+    global show_sample_forward
 
     A = conv.forward(x)
 
-    if show_sample:
+    if show_sample_forward:
         # mostrando layers convolucionais
         plot(A)
 
@@ -64,7 +70,7 @@ def forward_propagation(x, y):
     # retornando apenas os pixeis mais altos, diminuindo resolucao
     A = pool.forward(A)
 
-    if show_sample:
+    if show_sample_forward:
         # mostrando layers max pooling
         plot(A)
 
@@ -75,12 +81,12 @@ def forward_propagation(x, y):
     #cross entropy (-ln(A[y]))
     loss = -np.log(A[y])
     acc = 1 if np.argmax(A) == y else 0
-    show_sample = False
+    show_sample_forward = False
 
     return A, loss, acc
 
 def treinamento(x_train, y_train, lr=.005):
-
+    global show_sample_backward
     out, loss, acc = forward_propagation(x_train, y_train)
 
     grad = np.zeros(10)
@@ -92,9 +98,20 @@ def treinamento(x_train, y_train, lr=.005):
 
     
     grad = softmax.backward(grad, lr)
+    if show_sample_backward:
+        plot(grad)
+
     grad = pool.backward(grad)
+
+    if show_sample_backward:
+        plot(grad)
+
     grad = conv.backward(grad, lr)
 
+    if show_sample_backward:
+        plot(grad, 8)
+
+    show_sample_backward = False
     return loss, acc
 
 epoch_qtd = 100

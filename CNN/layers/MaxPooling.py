@@ -41,5 +41,4 @@ class MaxPooling:
                     for nova_qtd in range(qtd):
                         if k[nova_altura, nova_largura, nova_qtd] == maximo[nova_qtd]:
                             dz_input[i * 2 + nova_altura, j * 2 + nova_largura, nova_qtd] = dZ[i, j, nova_qtd]
-
         return dz_input

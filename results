@@ -1,0 +1,168 @@
+##############################################
+
+time NN
+---------------------------------
+
+2000 epochs
+
+primeira exec: 15s149ms
+
+accuracy test:
+[Step  2000] Past 100 steps: Accuracy: 61.50%
+
+accuracy dev:
+[Step  2000] Past 100 steps: Accuracy: 58.15%
+
+---------------------------------
+
+5000 epochs
+
+primeira exec: 1m24s20ms
+
+accuracy test:
+[Step  5000] Past 100 steps: Accuracy: 86.32%
+
+accuracy dev:
+[Step  5000] Past 100 steps: Accuracy: 85.20%
+
+--------------------------------
+
+dados print
+
+accuracy test:
+
+##############################################
+time CNN
+
+---------------------------------
+
+2000 epochs
+
+primeira exec : 1m41s181ms
+
+accuracy test:
+[Step  2000] Past 100 steps: Average Loss 0.023 | Accuracy: 82.00%
+
+accuracy dev:
+[Step  2000] Past 100 steps: Average Loss 0.164 | Accuracy: 83.00%
+
+---------------------------------
+
+5000 epochs
+
+primeira exec : 4m20s911ms
+
+accuracy test:
+[Step  5000] Past 100 steps: Average Loss 0.006 | Accuracy: 89.00%
+accuracy dev:
+[Step  5000] Past 100 steps: Average Loss 0.120 | Accuracy: 88.00%
+
+
+--------------------------------
+
+dados print
+
+accuracy test:
+[Step   100] Past 100 steps: Average Loss 2.275 | Accuracy: 25.00%
+[Step   200] Past 100 steps: Average Loss 1.090 | Accuracy: 32.00%
+[Step   300] Past 100 steps: Average Loss 0.664 | Accuracy: 42.00%
+[Step   400] Past 100 steps: Average Loss 0.405 | Accuracy: 63.00%
+[Step   500] Past 100 steps: Average Loss 0.236 | Accuracy: 69.00%
+[Step   600] Past 100 steps: Average Loss 0.158 | Accuracy: 68.00%
+[Step   700] Past 100 steps: Average Loss 0.101 | Accuracy: 85.00%
+[Step   800] Past 100 steps: Average Loss 0.073 | Accuracy: 86.00%
+[Step   900] Past 100 steps: Average Loss 0.066 | Accuracy: 84.00%
+[Step  1000] Past 100 steps: Average Loss 0.075 | Accuracy: 75.00%
+[Step  1100] Past 100 steps: Average Loss 0.049 | Accuracy: 83.00%
+[Step  1200] Past 100 steps: Average Loss 0.038 | Accuracy: 84.00%
+[Step  1300] Past 100 steps: Average Loss 0.053 | Accuracy: 77.00%
+[Step  1400] Past 100 steps: Average Loss 0.034 | Accuracy: 87.00%
+[Step  1500] Past 100 steps: Average Loss 0.067 | Accuracy: 69.00%
+[Step  1600] Past 100 steps: Average Loss 0.045 | Accuracy: 73.00%
+[Step  1700] Past 100 steps: Average Loss 0.030 | Accuracy: 85.00%
+[Step  1800] Past 100 steps: Average Loss 0.030 | Accuracy: 87.00%
+[Step  1900] Past 100 steps: Average Loss 0.032 | Accuracy: 81.00%
+[Step  2000] Past 100 steps: Average Loss 0.018 | Accuracy: 86.00%
+[Step  2100] Past 100 steps: Average Loss 0.026 | Accuracy: 79.00%
+[Step  2200] Past 100 steps: Average Loss 0.021 | Accuracy: 85.00%
+[Step  2300] Past 100 steps: Average Loss 0.017 | Accuracy: 88.00%
+[Step  2400] Past 100 steps: Average Loss 0.018 | Accuracy: 87.00%
+[Step  2500] Past 100 steps: Average Loss 0.018 | Accuracy: 86.00%
+[Step  2600] Past 100 steps: Average Loss 0.013 | Accuracy: 89.00%
+[Step  2700] Past 100 steps: Average Loss 0.021 | Accuracy: 82.00%
+[Step  2800] Past 100 steps: Average Loss 0.024 | Accuracy: 80.00%
+[Step  2900] Past 100 steps: Average Loss 0.026 | Accuracy: 77.00%
+[Step  3000] Past 100 steps: Average Loss 0.015 | Accuracy: 85.00%
+[Step  3100] Past 100 steps: Average Loss 0.017 | Accuracy: 84.00%
+[Step  3200] Past 100 steps: Average Loss 0.013 | Accuracy: 85.00%
+[Step  3300] Past 100 steps: Average Loss 0.010 | Accuracy: 90.00%
+[Step  3400] Past 100 steps: Average Loss 0.009 | Accuracy: 87.00%
+[Step  3500] Past 100 steps: Average Loss 0.010 | Accuracy: 88.00%
+[Step  3600] Past 100 steps: Average Loss 0.009 | Accuracy: 96.00%
+[Step  3700] Past 100 steps: Average Loss 0.013 | Accuracy: 81.00%
+[Step  3800] Past 100 steps: Average Loss 0.008 | Accuracy: 88.00%
+[Step  3900] Past 100 steps: Average Loss 0.013 | Accuracy: 81.00%
+[Step  4000] Past 100 steps: Average Loss 0.012 | Accuracy: 90.00%
+[Step  4100] Past 100 steps: Average Loss 0.014 | Accuracy: 82.00%
+[Step  4200] Past 100 steps: Average Loss 0.014 | Accuracy: 84.00%
+[Step  4300] Past 100 steps: Average Loss 0.011 | Accuracy: 83.00%
+[Step  4400] Past 100 steps: Average Loss 0.011 | Accuracy: 89.00%
+[Step  4500] Past 100 steps: Average Loss 0.006 | Accuracy: 92.00%
+[Step  4600] Past 100 steps: Average Loss 0.011 | Accuracy: 86.00%
+[Step  4700] Past 100 steps: Average Loss 0.009 | Accuracy: 86.00%
+[Step  4800] Past 100 steps: Average Loss 0.006 | Accuracy: 96.00%
+[Step  4900] Past 100 steps: Average Loss 0.006 | Accuracy: 90.00%
+[Step  5000] Past 100 steps: Average Loss 0.006 | Accuracy: 89.00%
+
+accuracy dev:
+
+[Step   100] Past 100 steps: Average Loss 0.091 | Accuracy: 0.91%
+[Step   200] Past 100 steps: Average Loss 0.095 | Accuracy: 0.90%
+[Step   300] Past 100 steps: Average Loss 0.094 | Accuracy: 0.91%
+[Step   400] Past 100 steps: Average Loss 0.108 | Accuracy: 0.89%
+[Step   500] Past 100 steps: Average Loss 0.106 | Accuracy: 0.89%
+[Step   600] Past 100 steps: Average Loss 0.115 | Accuracy: 0.88%
+[Step   700] Past 100 steps: Average Loss 0.119 | Accuracy: 0.88%
+[Step   800] Past 100 steps: Average Loss 0.115 | Accuracy: 0.88%
+[Step   900] Past 100 steps: Average Loss 0.112 | Accuracy: 0.89%
+[Step  1000] Past 100 steps: Average Loss 0.111 | Accuracy: 0.89%
+[Step  1100] Past 100 steps: Average Loss 0.110 | Accuracy: 0.89%
+[Step  1200] Past 100 steps: Average Loss 0.107 | Accuracy: 0.89%
+[Step  1300] Past 100 steps: Average Loss 0.107 | Accuracy: 0.89%
+[Step  1400] Past 100 steps: Average Loss 0.106 | Accuracy: 0.89%
+[Step  1500] Past 100 steps: Average Loss 0.106 | Accuracy: 0.89%
+[Step  1600] Past 100 steps: Average Loss 0.109 | Accuracy: 0.89%
+[Step  1700] Past 100 steps: Average Loss 0.113 | Accuracy: 0.89%
+[Step  1800] Past 100 steps: Average Loss 0.114 | Accuracy: 0.89%
+[Step  1900] Past 100 steps: Average Loss 0.115 | Accuracy: 0.88%
+[Step  2000] Past 100 steps: Average Loss 0.113 | Accuracy: 0.89%
+[Step  2100] Past 100 steps: Average Loss 0.111 | Accuracy: 0.89%
+[Step  2200] Past 100 steps: Average Loss 0.112 | Accuracy: 0.89%
+[Step  2300] Past 100 steps: Average Loss 0.114 | Accuracy: 0.89%
+[Step  2400] Past 100 steps: Average Loss 0.113 | Accuracy: 0.89%
+[Step  2500] Past 100 steps: Average Loss 0.114 | Accuracy: 0.89%
+[Step  2600] Past 100 steps: Average Loss 0.118 | Accuracy: 0.88%
+[Step  2700] Past 100 steps: Average Loss 0.118 | Accuracy: 0.88%
+[Step  2800] Past 100 steps: Average Loss 0.116 | Accuracy: 0.88%
+[Step  2900] Past 100 steps: Average Loss 0.117 | Accuracy: 0.88%
+[Step  3000] Past 100 steps: Average Loss 0.118 | Accuracy: 0.88%
+[Step  3100] Past 100 steps: Average Loss 0.121 | Accuracy: 0.88%
+[Step  3200] Past 100 steps: Average Loss 0.120 | Accuracy: 0.88%
+[Step  3300] Past 100 steps: Average Loss 0.119 | Accuracy: 0.88%
+[Step  3400] Past 100 steps: Average Loss 0.119 | Accuracy: 0.88%
+[Step  3500] Past 100 steps: Average Loss 0.121 | Accuracy: 0.88%
+[Step  3600] Past 100 steps: Average Loss 0.121 | Accuracy: 0.88%
+[Step  3700] Past 100 steps: Average Loss 0.121 | Accuracy: 0.88%
+[Step  3800] Past 100 steps: Average Loss 0.121 | Accuracy: 0.88%
+[Step  3900] Past 100 steps: Average Loss 0.121 | Accuracy: 0.88%
+[Step  4000] Past 100 steps: Average Loss 0.120 | Accuracy: 0.88%
+[Step  4100] Past 100 steps: Average Loss 0.118 | Accuracy: 0.88%
+[Step  4200] Past 100 steps: Average Loss 0.118 | Accuracy: 0.88%
+[Step  4300] Past 100 steps: Average Loss 0.119 | Accuracy: 0.88%
+[Step  4400] Past 100 steps: Average Loss 0.119 | Accuracy: 0.88%
+[Step  4500] Past 100 steps: Average Loss 0.120 | Accuracy: 0.88%
+[Step  4600] Past 100 steps: Average Loss 0.120 | Accuracy: 0.88%
+[Step  4700] Past 100 steps: Average Loss 0.120 | Accuracy: 0.88%
+[Step  4800] Past 100 steps: Average Loss 0.121 | Accuracy: 0.88%
+[Step  4900] Past 100 steps: Average Loss 0.120 | Accuracy: 0.88%
+[Step  5000] Past 100 steps: Average Loss 0.120 | Accuracy: 0.88%

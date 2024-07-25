@@ -16,6 +16,8 @@ data = data
 Y = data[:, 0]
 X = data[:, 1:n + 1]
 
+print(m, n)
+
 #/255 pois os valores estao entre 0 e 255 e precisamos de 0 e 1
 
 treinamento_num = 5000
@@ -56,8 +58,11 @@ def forward_propagation(x, W1, b1, W2, b2):
     Z2 = W2.dot(A1) + b2
     A2 = softmax(Z2)
 
-    loss = np.sum(-np.log(A2[y_train])) / len(y_train)
-    return Z1, A1, Z2, A2, loss
+    loss = 0
+    for i in range(A2.shape[1]):
+        loss += np.log(A2[:, i][y_train[i]])
+
+    return Z1, A1, Z2, A2, ((- 1 / A2.shape[1]) * loss )
 
 """
 Converts a 1D array of integers representing labels into a one-hot encoded matrix.
@@ -99,9 +104,9 @@ def rodar_epoca(x, y, learning_rate, iterations):
         dW1, db1, dW2, db2 = backward_propagation(Z1, A1, Z2, A2, W1, W2, x, y)
 
         W1, b1, W2, b2 = gradient_descent(W1, b1, W2, b2, dW1, db1, dW2, db2, learning_rate)
-        if i % 10 == 0:
+        if i % 100 == 0:
             print("Iteração: ", i)
-            print("Acurácia: ", get_accuracy(A2, y))
+            print("Acurácia: ", get_accuracy(A2, y) * 100, "%")
             print("Loss: ", loss)
     return W1, b1, W2, b2
 
@@ -111,7 +116,7 @@ def get_predictions(A2):
 epoch_qtd = 5000
 
 def predict(x, W1, b1, W2, b2):
-    _, _, _, A2 = forward_propagation(x, W1, b1, W2, b2)
+    _, _, _, A2, _ = forward_propagation(x, W1, b1, W2, b2)
     predictions = get_predictions(A2)
     return predictions
 
@@ -137,6 +142,6 @@ def get_accuracy_dev(predictions, y):
         if predictions[i] == y[i]:
             predictions_correct += 1
 
-    return predictions_correct / len(predictions)
+    return (predictions_correct / len(predictions))
 
-print("Acurácia DEV: ", get_accuracy_dev(dev_predictions, y_test))
+print("Acurácia DEV: ", get_accuracy_dev(dev_predictions, y_test) * 100, "%")
